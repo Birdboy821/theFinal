@@ -1,0 +1,17 @@
+* {
+    margin: 0 auto;
+    padding: 0;
+}
+
+.big {
+    font-size: 40px;
+}
+
+body {
+    background: rgb(51, 51, 51);
+    text-align: center;
+}
+
+h2, h1 {
+    color: white;
+}

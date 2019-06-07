@@ -1,0 +1,1652 @@
+<!DOCTYPE html>
+<head>
+    <title>Bird Clicker</title>
+    <script>
+        function check() {
+            load();
+            load();
+            alert("On The Scale of 1 to 10 how annoy is this");
+            localStorage.darktheme = 1;
+            progess()
+        }
+
+        function progess() {
+
+            if (localStorage.here == 1) {
+                localStorage.here = 1;
+            } else if (localStorage.here == 0) {
+                document.getElementById("a").classList.remove('hidden1');
+                document.getElementById("result").classList.remove('hidden1');
+                if (localStorage.here1 == 0) {
+                    tutorial1();
+                }
+            } else {
+                localStorage.here = 0;
+                localStorage.here1 = 0;
+                localStorage.here2 = 0;
+                localStorage.here3 = 0;
+                localStorage.here4 = 0;
+                localStorage.here11 = 0;
+                localStorage.fin = 1;
+                if (localStorage.here == 0) {
+                    document.getElementById("a").classList.remove('hidden1');
+                    document.getElementById("result").classList.remove('hidden1');
+                    if (localStorage.here1 == 0) {
+                        tutorial1();
+                    }
+                }
+            }
+
+            if (localStorage.here == 1) {
+                document.getElementById("a").classList.remove('hidden1');
+                document.getElementById("b").classList.remove('hidden1');
+                document.getElementById("c").classList.remove('hidden1');
+                document.getElementById("d").classList.remove('hidden1');
+                document.getElementById("result").classList.remove('hidden1');
+                document.getElementById("result3").classList.remove('hidden1');
+                document.getElementById("result2").classList.remove('hidden1');
+                document.getElementById("result4").classList.remove('hidden1');
+                document.getElementById("aba").classList.remove('hidden1')
+                document.getElementById("e").classList.remove('hidden1')
+                document.getElementById("result5").classList.remove('hidden1');
+                document.getElementById("f").classList.remove('hidden1')
+                document.getElementById("result6").classList.remove('hidden1');
+                document.getElementById("aaa").classList.remove('hidden1');
+                document.getElementById("aae").classList.remove('hidden1');
+            }
+
+            if (localStorage.here == 0) {
+                if (localStorage.here1 == 1 && localStorage.here2 == 0) {
+                    tutorial2();
+                } else if (localStorage.here2 == 1 && localStorage.here3 == 0) {
+                    tutorial3();
+                } else if (localStorage.here3 == 1 && localStorage.here4 == 0) {
+                    tutorial4();
+                    document.getElementById("b").classList.remove('hidden1');
+                    document.getElementById("result2").classList.remove('hidden1');
+                } else if (localStorage.here4 == 1) {
+                    tutorial5();
+                }
+            }
+
+            if (localStorage.here11 == 1 && localStorage.fin == 0) {
+                tutorial11();
+                localStorage.fin = 1;
+            }
+
+            if (localStorage.fin == 1) {
+                unlock();
+            }
+        }
+
+        function tutorial1() {
+            alert("Click the bird to start your way to the top");
+            document.getElementById("result").classList.remove('hidden1');
+        }
+
+        function tutorial2() {
+            alert("Good now click the bird 4 more times");
+            
+        }
+
+        function tutorial3() {
+            alert("Great now click the mice");
+            document.getElementById("b").classList.remove('hidden1');
+            document.getElementById("result2").classList.remove('hidden1');
+        }
+
+        function tutorial4() {
+            alert("Good now click the mice 4 more times")
+        }
+
+        function tutorial5() {
+            alert("Great now move on to the owls and foxes")
+            alert("And I will see you in the near furter")
+            alert("you can use the chart right here --->")
+            document.getElementById("aba").classList.remove('hidden1')
+            alert("*NOTE* both FOXES and OWLS both uses mice")
+            document.getElementById("c").classList.remove('hidden1')
+            document.getElementById("result3").classList.remove('hidden1');
+            document.getElementById("d").classList.remove('hidden1')
+            document.getElementById("result4").classList.remove('hidden1');
+            document.getElementById("e").classList.remove('hidden1')
+            document.getElementById("result5").classList.remove('hidden1');
+            document.getElementById("f").classList.remove('hidden1')
+            document.getElementById("result6").classList.remove('hidden1');
+            localStorage.here = 1
+        }
+
+        function tutorial11() {
+            alert("You can now purchase a human and continue down to the victory")
+            document.getElementById("g").classList.remove('hidden1')
+            document.getElementById("result7").classList.remove('hidden1');
+            var rere = confirm("Now Pay $19.17 to unlock every thing");
+            if (rere == true) {
+                unlock();
+            } else {
+                localStorage.clear();
+                location.reload();
+            }
+        }
+
+        function unlock() {
+            document.getElementById("a").classList.remove('hidden1');
+            document.getElementById("b").classList.remove('hidden1');
+            document.getElementById("c").classList.remove('hidden1');
+            document.getElementById("d").classList.remove('hidden1');
+            document.getElementById("e").classList.remove('hidden1');
+            document.getElementById("f").classList.remove('hidden1');
+            document.getElementById("g").classList.remove('hidden1');
+            document.getElementById("h").classList.remove('hidden1');
+            document.getElementById("i").classList.remove('hidden1');
+            document.getElementById("j").classList.remove('hidden1');
+            document.getElementById("k").classList.remove('hidden1');
+            document.getElementById("l").classList.remove('hidden1');
+            document.getElementById("m").classList.remove('hidden1');
+            document.getElementById("n").classList.remove('hidden1');
+            document.getElementById("o").classList.remove('hidden1');
+            document.getElementById("p").classList.remove('hidden1');
+            document.getElementById("q").classList.remove('hidden1');
+            document.getElementById("r").classList.remove('hidden1');
+            document.getElementById("s").classList.remove('hidden1');
+            document.getElementById("t").classList.remove('hidden1');
+            document.getElementById("u").classList.remove('hidden1');
+            document.getElementById("v").classList.remove('hidden1');
+            document.getElementById("aa").classList.remove('hidden1');
+            document.getElementById("result").classList.remove('hidden1');
+            document.getElementById("result2").classList.remove('hidden1');
+            document.getElementById("result3").classList.remove('hidden1');
+            document.getElementById("result4").classList.remove('hidden1');
+            document.getElementById("result5").classList.remove('hidden1');
+            document.getElementById("result6").classList.remove('hidden1');
+            document.getElementById("result7").classList.remove('hidden1');
+            document.getElementById("result21").classList.remove('hidden1');
+            document.getElementById("result22").classList.remove('hidden1');
+            document.getElementById("result23").classList.remove('hidden1');
+            document.getElementById("result24").classList.remove('hidden1');
+            document.getElementById("result25").classList.remove('hidden1');
+            document.getElementById("result31").classList.remove('hidden1');
+            document.getElementById("result32").classList.remove('hidden1');
+            document.getElementById("result33").classList.remove('hidden1');
+            document.getElementById("result34").classList.remove('hidden1');
+            document.getElementById("result35").classList.remove('hidden1');
+            document.getElementById("result99").classList.remove('hidden1');
+            document.getElementById("darktheme").classList.remove('hidden1');
+            document.getElementById("aaa").classList.remove('hidden1');
+            document.getElementById("aab").classList.remove('hidden1');
+            document.getElementById("aac").classList.remove('hidden1');
+            document.getElementById("aad").classList.remove('hidden1');
+            document.getElementById("aae").classList.remove('hidden1');
+            document.getElementById("aaf").classList.remove('hidden1');
+            document.getElementById("aba").classList.remove('hidden1');
+            document.getElementById("abb").classList.remove('hidden1');
+            document.getElementById("baa").classList.remove('hidden1')
+            document.getElementById("bab").classList.remove('hidden1')
+            document.getElementById("bac").classList.remove('hidden1')
+            document.getElementById("bad").classList.remove('hidden1')
+            document.getElementById("bae").classList.remove('hidden1')
+            document.getElementById("baf").classList.remove('hidden1')
+            document.getElementById("bag").classList.remove('hidden1')
+            document.getElementById("bah").classList.remove('hidden1')
+            document.getElementById("bai").classList.remove('hidden1')
+            document.getElementById("baj").classList.remove('hidden1')
+            document.getElementById("bak").classList.remove('hidden1')
+            document.getElementById("bal").classList.remove('hidden1')
+        }
+
+        function dark() {
+            if (localStorage.darktheme) {
+                if (localStorage.darktheme == 1) {
+                    document.getElementById("darktheme").innerHTML = "Light Theme";
+                    localStorage.darktheme = 2;
+                    darkoff();
+                    nukeoff();
+                } else if (localStorage.darktheme == 2) {
+                    document.getElementById("darktheme").innerHTML = "Dark Theme";
+                    localStorage.darktheme = 3;
+                    darkon();
+                    nukeoff();
+                }else if (localStorage.darktheme == 3) {
+                    document.getElementById("darktheme").innerHTML = "Nuclear Theme";
+                    localStorage.darktheme = 1;
+                    darkoff();
+                    nukeon();
+                }
+            } else {
+                localStorage.darktheme = 1;
+            }
+        }
+
+//   __  __   _    _   _        _______   _____   _____    _        _____   ______   _____  
+//  |  \/  | | |  | | | |      |__   __| |_   _| |  __ \  | |      |_   _| |  ____| |  __ \ 
+//  | \  / | | |  | | | |         | |      | |   | |__) | | |        | |   | |__    | |__) |
+//  | |\/| | | |  | | | |         | |      | |   |  ___/  | |        | |   |  __|   |  _  / 
+//  | |  | | | |__| | | |____     | |     _| |_  | |      | |____   _| |_  | |____  | | \ \ 
+//  |_|  |_|  \____/  |______|    |_|    |_____| |_|      |______| |_____| |______| |_|  \_\
+// 
+                                                                                         
+        function multiple() {
+            if (typeof(Storage) !== "undefined") {
+                if (localStorage.multiple) {
+                    if (localStorage.multiple < 5) {
+                        localStorage.multiple = Number(localStorage.multiple) + 4;
+                    } else if (localStorage.multiple == 5) {
+                        localStorage.multiple = Number(localStorage.multiple) + 20;
+                    } else if (localStorage.multiple == 25) {
+                        localStorage.multiple = Number(localStorage.multiple) + 25;
+                    } else if (localStorage.multiple == 50) {
+                        localStorage.multiple = Number(localStorage.multiple) * 10;
+                    } else if (localStorage.multiple == 500) {
+                        localStorage.multiple = Number(localStorage.multiple) - 499;
+                    }
+                } else {
+                    localStorage.multiple = 1;
+                }
+                document.getElementById("result99").innerHTML = "You have " + localStorage.multiple + " Multiplier."; 
+            } else  {
+                 document.getElementById("result99").innerHTML = "Sorry, but I hate you";
+            }
+        }
+        
+//   ____    _____   _____    _____       _____   _        _____    _____   _  __  ______   _____  
+//  |  _ \  |_   _| |  __ \  |  __ \     / ____| | |      |_   _|  / ____| | |/ / |  ____| |  __ \ 
+//  | |_) |   | |   | |__) | | |  | |   | |      | |        | |   | |      | ' /  | |__    | |__) |
+//  |  _ <    | |   |  _  /  | |  | |   | |      | |        | |   | |      |  <   |  __|   |  _  / 
+//  | |_) |  _| |_  | | \ \  | |__| |   | |____  | |____   _| |_  | |____  | . \  | |____  | | \ \ 
+//  |____/  |_____| |_|  \_\ |_____/     \_____| |______| |_____|  \_____| |_|\_\ |______| |_|  \_\                                                      //
+
+        function clickCounter() {
+            if (localStorage.clickcount) {
+                localStorage.clickcount = Number(localStorage.multiple) + Number(localStorage.clickcount);
+                // alert("hi")
+
+                if (localStorage.here == 0) {
+                    if (localStorage.here1 == 0) {
+                        tutorial2();
+                        localStorage.here1 = 1;
+                    }
+                    if (localStorage.clickcount >= 5 && localStorage.here2 == 0) {
+                        tutorial3();
+                        localStorage.here2 = 1;
+                    }
+                }
+            } else {
+                localStorage.clickcount = 0;
+            }
+            load()
+        }
+
+//   __  __   _____    _____   ______      _____   _        _____    _____   _  __  ______   _____  
+//  |  \/  | |_   _|  / ____| |  ____|    / ____| | |      |_   _|  / ____| | |/ / |  ____| |  __ \ 
+//  | \  / |   | |   | |      | |__      | |      | |        | |   | |      | ' /  | |__    | |__) |
+//  | |\/| |   | |   | |      |  __|     | |      | |        | |   | |      |  <   |  __|   |  _  / 
+//  | |  | |  _| |_  | |____  | |____    | |____  | |____   _| |_  | |____  | . \  | |____  | | \ \ 
+//  |_|  |_| |_____|  \_____| |______|    \_____| |______| |_____|  \_____| |_|\_\ |______| |_|  \_\
+//
+
+        function clickCounter2() {
+            if (typeof(Storage) !== "undefined") {
+                if (localStorage.clickcount2) {
+                    if (localStorage.clickcount >= 5 * Number(localStorage.multiple)) {
+                        localStorage.clickcount2 = Number(localStorage.clickcount2) + Number(localStorage.multiple);
+                        localStorage.clickcount = Number(localStorage.clickcount) - 5 * Number(localStorage.multiple);
+
+                        if (localStorage.here == 0) {
+                            if (localStorage.here3 == 0) {
+                                tutorial4();
+                                localStorage.here3 = 1;
+                            }
+                            if (localStorage.clickcount2 >= 5 && localStorage.here4 == 0) {
+                                tutorial5();
+                                localStorage.here4 = 1;
+                            }
+                        }
+                    }
+                
+                } else {
+                localStorage.clickcount2 = 0;
+                }
+                load()
+                } else {
+                document.getElementById("result2").innerHTML = "Sorry, your browser does not support web storage...";
+            }
+        }
+
+//    ____   __          __  _           _____   _        _____    _____   _  __  ______   _____  
+//   / __ \  \ \        / / | |         / ____| | |      |_   _|  / ____| | |/ / |  ____| |  __ \ 
+//  | |  | |  \ \  /\  / /  | |        | |      | |        | |   | |      | ' /  | |__    | |__) |
+//  | |  | |   \ \/  \/ /   | |        | |      | |        | |   | |      |  <   |  __|   |  _  / 
+//  | |__| |    \  /\  /    | |____    | |____  | |____   _| |_  | |____  | . \  | |____  | | \ \ 
+//   \____/      \/  \/     |______|    \_____| |______| |_____|  \_____| |_|\_\ |______| |_|  \_\
+//
+        function clickCounter3() {
+            if (typeof(Storage) !== "undefined") {
+                if (localStorage.clickcount3) {
+                    if (localStorage.clickcount2 >= 5 * Number(localStorage.multiple)) {
+                        localStorage.clickcount3 = Number(localStorage.clickcount3) + Number(localStorage.multiple);
+                        localStorage.clickcount2 = Number(localStorage.clickcount2) - 5 * Number(localStorage.multiple);
+                    }
+                
+                } else {
+                localStorage.clickcount3 = 0;
+                }
+                load()
+            } else {
+                document.getElementById("result3").innerHTML = "Sorry, your browser does not support web storage...";
+            }
+        }
+
+//   ______    ____   __   __     _____   _        _____    _____   _  __  ______   _____  
+//  |  ____|  / __ \  \ \ / /    / ____| | |      |_   _|  / ____| | |/ / |  ____| |  __ \ 
+//  | |__    | |  | |  \ V /    | |      | |        | |   | |      | ' /  | |__    | |__) |
+//  |  __|   | |  | |   > <     | |      | |        | |   | |      |  <   |  __|   |  _  / 
+//  | |      | |__| |  / . \    | |____  | |____   _| |_  | |____  | . \  | |____  | | \ \ 
+//  |_|       \____/  /_/ \_\    \_____| |______| |_____|  \_____| |_|\_\ |______| |_|  \_\
+//
+
+        function clickCounter4() {
+            if (typeof(Storage) !== "undefined") {
+                if (localStorage.clickcount4) {
+                    if (localStorage.clickcount2 >= 5 * Number(localStorage.multiple)) {
+                        localStorage.clickcount4 = Number(localStorage.clickcount4) + Number(localStorage.multiple);
+                        localStorage.clickcount2 = Number(localStorage.clickcount2) - 5 * Number(localStorage.multiple);
+                    }
+                
+                } else {
+                localStorage.clickcount4 = 0;
+                }
+                load()
+            } else {
+                document.getElementById("result4").innerHTML = "Sorry, your browser does not support web storage...";
+            }
+        }
+
+//   _____    ______   _   _    _____   _    _   _____   _   _      _____   _        _____    _____   _  __  ______   _____  
+//  |  __ \  |  ____| | \ | |  / ____| | |  | | |_   _| | \ | |    / ____| | |      |_   _|  / ____| | |/ / |  ____| |  __ \ 
+//  | |__) | | |__    |  \| | | |  __  | |  | |   | |   |  \| |   | |      | |        | |   | |      | ' /  | |__    | |__) |
+//  |  ___/  |  __|   | . ` | | | |_ | | |  | |   | |   | . ` |   | |      | |        | |   | |      |  <   |  __|   |  _  / 
+//  | |      | |____  | |\  | | |__| | | |__| |  _| |_  | |\  |   | |____  | |____   _| |_  | |____  | . \  | |____  | | \ \ 
+//  |_|      |______| |_| \_|  \_____|  \____/  |_____| |_| \_|    \_____| |______| |_____|  \_____| |_|\_\ |______| |_|  \_\
+//
+
+        function clickCounter5() {
+            if (typeof(Storage) !== "undefined") {
+                if (localStorage.clickcount5) {
+                    if (localStorage.clickcount3 >= 5 * Number(localStorage.multiple) ) {
+                        localStorage.clickcount5 = Number(localStorage.clickcount5) + Number(localStorage.multiple);
+                        localStorage.clickcount3 = Number(localStorage.clickcount3) - 5 * Number(localStorage.multiple) ;
+
+                        if (localStorage.clickcount5 >= 5 && localStorage.clickcount5 >= 6 && localStorage.here11 == 0) {
+                            tutorial11();
+                            localStorage.here11 = 1
+                        }
+                    }
+                
+                } else {
+                localStorage.clickcount5 = 0;
+                }
+                load()
+            } else {
+                document.getElementById("result5").innerHTML = "Sorry, your browser does not support web storage...";
+            }
+        }
+
+//   _____               ____    ____    _____   _______      _____   _        _____    _____   _  __  ______   _____  
+//  |  __ \      /\     |  _ \  |  _ \  |_   _| |__   __|    / ____| | |      |_   _|  / ____| | |/ / |  ____| |  __ \ 
+//  | |__) |    /  \    | |_) | | |_) |   | |      | |      | |      | |        | |   | |      | ' /  | |__    | |__) |
+//  |  _  /    / /\ \   |  _ <  |  _ <    | |      | |      | |      | |        | |   | |      |  <   |  __|   |  _  / 
+//  | | \ \   / ____ \  | |_) | | |_) |  _| |_     | |      | |____  | |____   _| |_  | |____  | . \  | |____  | | \ \ 
+//  |_|  \_\ /_/    \_\ |____/  |____/  |_____|    |_|       \_____| |______| |_____|  \_____| |_|\_\ |______| |_|  \_\
+// 
+        function clickCounter6() {
+            if (typeof(Storage) !== "undefined") {
+                if (localStorage.clickcount6) {
+                    if (localStorage.clickcount4 >= 5 * Number(localStorage.multiple) ) {
+                        localStorage.clickcount6 = Number(localStorage.clickcount6) + Number(localStorage.multiple);
+                        localStorage.clickcount4 = Number(localStorage.clickcount4) - 5 * Number(localStorage.multiple) ;
+                    }
+                    if (localStorage.clickcount5 >= 5 && localStorage.clickcount6 >= 5 && localStorage.here11 == 0) {
+                            tutorial11();
+                            localStorage.here11 = 1
+                    }
+                
+                } else {
+                localStorage.clickcount6 = 0;
+                }
+                load()
+            } else {
+                document.getElementById("result5").innerHTML = "Sorry, your browser does not support web storage...";
+            }
+        }
+
+//   _    _   _    _   __  __              _   _      _____   _        _____    _____   _  __  ______   _____  
+//  | |  | | | |  | | |  \/  |     /\     | \ | |    / ____| | |      |_   _|  / ____| | |/ / |  ____| |  __ \ 
+//  | |__| | | |  | | | \  / |    /  \    |  \| |   | |      | |        | |   | |      | ' /  | |__    | |__) |
+//  |  __  | | |  | | | |\/| |   / /\ \   | . ` |   | |      | |        | |   | |      |  <   |  __|   |  _  / 
+//  | |  | | | |__| | | |  | |  / ____ \  | |\  |   | |____  | |____   _| |_  | |____  | . \  | |____  | | \ \ 
+//  |_|  |_|  \____/  |_|  |_| /_/    \_\ |_| \_|    \_____| |______| |_____|  \_____| |_|\_\ |______| |_|  \_\
+// 
+
+        function clickCounter7() {
+            if (typeof(Storage) !== "undefined") {
+                if (localStorage.clickcount7) {
+                    if (localStorage.clickcount6 >= 5 * Number(localStorage.multiple ) && localStorage.clickcount5 >= 5 * Number(localStorage.multiple) ) {
+                        localStorage.clickcount7 = Number(localStorage.clickcount7) + Number(localStorage.multiple);
+                        localStorage.clickcount6 = Number(localStorage.clickcount6) - 5 * Number(localStorage.multiple) ;
+                        localStorage.clickcount5 = Number(localStorage.clickcount5) - 5 * Number(localStorage.multiple) ;
+                    }
+                
+                } else {
+                    localStorage.clickcount7 = 0;
+                }
+                load()
+            } else {
+                document.getElementById("result5").innerHTML = "Sorry, your browser does not support web storage...";
+            }
+        }
+
+//   ______              _____    _______   _    _      _____   _        _____    _____   _  __  ______   _____  
+//  |  ____|     /\     |  __ \  |__   __| | |  | |    / ____| | |      |_   _|  / ____| | |/ / |  ____| |  __ \ 
+//  | |__       /  \    | |__) |    | |    | |__| |   | |      | |        | |   | |      | ' /  | |__    | |__) |
+//  |  __|     / /\ \   |  _  /     | |    |  __  |   | |      | |        | |   | |      |  <   |  __|   |  _  / 
+//  | |____   / ____ \  | | \ \     | |    | |  | |   | |____  | |____   _| |_  | |____  | . \  | |____  | | \ \ 
+//  |______| /_/    \_\ |_|  \_\    |_|    |_|  |_|    \_____| |______| |_____|  \_____| |_|\_\ |______| |_|  \_\
+//
+
+        function clickCounter21() {
+            if (typeof(Storage) !== "undefined") {
+                if (localStorage.clickcount21) {
+                    if (localStorage.clickcount7 >= 5 * Number(localStorage.multiple) ) {
+                        localStorage.clickcount21 = Number(localStorage.clickcount21) + Number(localStorage.multiple);
+                        localStorage.clickcount7 = Number(localStorage.clickcount7) - 5 * Number(localStorage.multiple) ;
+                    }
+                
+                } else {
+                localStorage.clickcount21 = 0;
+                }
+                load()
+            } else {
+                document.getElementById("result5").innerHTML = "Sorry, your browser does not support web storage...";
+            }
+        }
+
+//   __  __              _____     _____      _____   _        _____    _____   _  __  ______   _____  
+//  |  \/  |     /\     |  __ \   / ____|    / ____| | |      |_   _|  / ____| | |/ / |  ____| |  __ \ 
+//  | \  / |    /  \    | |__) | | (___     | |      | |        | |   | |      | ' /  | |__    | |__) |
+//  | |\/| |   / /\ \   |  _  /   \___ \    | |      | |        | |   | |      |  <   |  __|   |  _  / 
+//  | |  | |  / ____ \  | | \ \   ____) |   | |____  | |____   _| |_  | |____  | . \  | |____  | | \ \ 
+//  |_|  |_| /_/    \_\ |_|  \_\ |_____/     \_____| |______| |_____|  \_____| |_|\_\ |______| |_|  \_\
+// 
+        function clickCounter22() {
+            if (typeof(Storage) !== "undefined") {
+                if (localStorage.clickcount22) {
+                    if (localStorage.clickcount21 >= 5 * Number(localStorage.multiple) ) {
+                        localStorage.clickcount22 = Number(localStorage.clickcount22) + Number(localStorage.multiple);
+                        localStorage.clickcount21 = Number(localStorage.clickcount21) - 5 * Number(localStorage.multiple) ;
+                    }
+                
+                } else {
+                localStorage.clickcount22 = 0;
+                }
+                load()
+            } else {
+                document.getElementById("result5").innerHTML = "Sorry, your browser does not support web storage...";
+            }
+        }
+
+//  __      __  ______   _   _   _    _    _____      _____   _        _____    _____   _  __  ______   _____  
+//  \ \    / / |  ____| | \ | | | |  | |  / ____|    / ____| | |      |_   _|  / ____| | |/ / |  ____| |  __ \ 
+//   \ \  / /  | |__    |  \| | | |  | | | (___     | |      | |        | |   | |      | ' /  | |__    | |__) |
+//    \ \/ /   |  __|   | . ` | | |  | |  \___ \    | |      | |        | |   | |      |  <   |  __|   |  _  / 
+//     \  /    | |____  | |\  | | |__| |  ____) |   | |____  | |____   _| |_  | |____  | . \  | |____  | | \ \ 
+//      \/     |______| |_| \_|  \____/  |_____/     \_____| |______| |_____|  \_____| |_|\_\ |______| |_|  \_\
+// 
+
+        function clickCounter23() {
+            if (typeof(Storage) !== "undefined") {
+                if (localStorage.clickcount23) {
+                    if (localStorage.clickcount22 >= 5 * Number(localStorage.multiple) ) {
+                        localStorage.clickcount23 = Number(localStorage.clickcount23) + Number(localStorage.multiple);
+                        localStorage.clickcount22 = Number(localStorage.clickcount22) - 5 * Number(localStorage.multiple) ;
+                    }
+                
+                } else {
+                localStorage.clickcount23 = 0;
+                }
+                load()
+            } else {
+                document.getElementById("result5").innerHTML = "Sorry, your browser does not support web storage...";
+            }
+        }
+
+//   __  __   ______   _____     _____   _    _   _____   __     __     _____   _        _____    _____   _  __  ______   _____  
+//  |  \/  | |  ____| |  __ \   / ____| | |  | | |  __ \  \ \   / /    / ____| | |      |_   _|  / ____| | |/ / |  ____| |  __ \ 
+//  | \  / | | |__    | |__) | | |      | |  | | | |__) |  \ \_/ /    | |      | |        | |   | |      | ' /  | |__    | |__) |
+//  | |\/| | |  __|   |  _  /  | |      | |  | | |  _  /    \   /     | |      | |        | |   | |      |  <   |  __|   |  _  / 
+//  | |  | | | |____  | | \ \  | |____  | |__| | | | \ \     | |      | |____  | |____   _| |_  | |____  | . \  | |____  | | \ \ 
+//  |_|  |_| |______| |_|  \_\  \_____|  \____/  |_|  \_\    |_|       \_____| |______| |_____|  \_____| |_|\_\ |______| |_|  \_\
+//
+
+        function clickCounter24() {
+            if (typeof(Storage) !== "undefined") {
+                if (localStorage.clickcount24) {
+                    if (localStorage.clickcount23 >= 5 * Number(localStorage.multiple) ) {
+                        localStorage.clickcount24 = Number(localStorage.clickcount24) + Number(localStorage.multiple);
+                        localStorage.clickcount23 = Number(localStorage.clickcount23) - 5 * Number(localStorage.multiple) ;
+                    }
+                
+                } else {
+                localStorage.clickcount24 = 0;
+                }
+                load()
+            } else {
+                document.getElementById("result5").innerHTML = "Sorry, your browser does not support web storage...";
+            }
+        }
+
+//   _____    _        _    _   _______    ____       _____   _        _____    _____   _  __  ______   _____  
+//  |  __ \  | |      | |  | | |__   __|  / __ \     / ____| | |      |_   _|  / ____| | |/ / |  ____| |  __ \ 
+//  | |__) | | |      | |  | |    | |    | |  | |   | |      | |        | |   | |      | ' /  | |__    | |__) |
+//  |  ___/  | |      | |  | |    | |    | |  | |   | |      | |        | |   | |      |  <   |  __|   |  _  / 
+//  | |      | |____  | |__| |    | |    | |__| |   | |____  | |____   _| |_  | |____  | . \  | |____  | | \ \ 
+//  |_|      |______|  \____/     |_|     \____/     \_____| |______| |_____|  \_____| |_|\_\ |______| |_|  \_\
+// 
+        function clickCounter25() {
+            if (typeof(Storage) !== "undefined") {
+                if (localStorage.clickcount25) {
+                    if (localStorage.clickcount24 >= 5 * Number(localStorage.multiple) ) {
+                        localStorage.clickcount25 = Number(localStorage.clickcount25) + Number(localStorage.multiple);
+                        localStorage.clickcount24 = Number(localStorage.clickcount24) - 5 * Number(localStorage.multiple) ;
+                    }
+                
+                } else {
+                localStorage.clickcount25 = 0;
+                }
+                load()
+            } else {
+                document.getElementById("result5").innerHTML = "Sorry, your browser does not support web storage...";
+            }
+        }
+
+//   _   _   ______   _____    _______   _    _   _   _   ______      _____   _        _____    _____   _  __  ______   _____  
+//  | \ | | |  ____| |  __ \  |__   __| | |  | | | \ | | |  ____|    / ____| | |      |_   _|  / ____| | |/ / |  ____| |  __ \ 
+//  |  \| | | |__    | |__) |    | |    | |  | | |  \| | | |__      | |      | |        | |   | |      | ' /  | |__    | |__) |
+//  | . ` | |  __|   |  ___/     | |    | |  | | | . ` | |  __|     | |      | |        | |   | |      |  <   |  __|   |  _  / 
+//  | |\  | | |____  | |         | |    | |__| | | |\  | | |____    | |____  | |____   _| |_  | |____  | . \  | |____  | | \ \ 
+//  |_| \_| |______| |_|         |_|     \____/  |_| \_| |______|    \_____| |______| |_____|  \_____| |_|\_\ |______| |_|  \_\
+//
+        function clickCounter31() {
+            if (typeof(Storage) !== "undefined") {
+                if (localStorage.clickcount31) {
+                    if (localStorage.clickcount25 >= 5 * Number(localStorage.multiple) ) {
+                        localStorage.clickcount31 = Number(localStorage.clickcount31) + Number(localStorage.multiple);
+                        localStorage.clickcount25 = Number(localStorage.clickcount25) - 5 * Number(localStorage.multiple) ;
+                    }
+                
+                } else {
+                localStorage.clickcount31 = 0;
+                }
+                load()
+            } else {
+                document.getElementById("result5").innerHTML = "Sorry, your browser does not support web storage...";
+            }
+        }
+
+//        _   _    _   _____    _____   _______   ______   _____       _____   _        _____    _____   _  __  ______   _____  
+//       | | | |  | | |  __ \  |_   _| |__   __| |  ____| |  __ \     / ____| | |      |_   _|  / ____| | |/ / |  ____| |  __ \ 
+//       | | | |  | | | |__) |   | |      | |    | |__    | |__) |   | |      | |        | |   | |      | ' /  | |__    | |__) |
+//   _   | | | |  | | |  ___/    | |      | |    |  __|   |  _  /    | |      | |        | |   | |      |  <   |  __|   |  _  / 
+//  | |__| | | |__| | | |       _| |_     | |    | |____  | | \ \    | |____  | |____   _| |_  | |____  | . \  | |____  | | \ \ 
+//   \____/   \____/  |_|      |_____|    |_|    |______| |_|  \_\    \_____| |______| |_____|  \_____| |_|\_\ |______| |_|  \_\
+//
+
+        function clickCounter32() {
+            if (typeof(Storage) !== "undefined") {
+                if (localStorage.clickcount32) {
+                    if (localStorage.clickcount31 >= 5 * Number(localStorage.multiple) ) {
+                        localStorage.clickcount32 = Number(localStorage.clickcount32) + Number(localStorage.multiple);
+                        localStorage.clickcount31 = Number(localStorage.clickcount31) - 5 * Number(localStorage.multiple) ;
+                    }
+                
+                } else {
+                localStorage.clickcount32 = 0;
+                }
+                load()
+            } else {
+                document.getElementById("result5").innerHTML = "Sorry, your browser does not support web storage...";
+            }
+        }
+
+//    _____              _______   _    _   _____    _   _      _____   _        _____    _____   _  __  ______   _____  
+//   / ____|     /\     |__   __| | |  | | |  __ \  | \ | |    / ____| | |      |_   _|  / ____| | |/ / |  ____| |  __ \ 
+//  | (___      /  \       | |    | |  | | | |__) | |  \| |   | |      | |        | |   | |      | ' /  | |__    | |__) |
+//   \___ \    / /\ \      | |    | |  | | |  _  /  | . ` |   | |      | |        | |   | |      |  <   |  __|   |  _  / 
+//   ____) |  / ____ \     | |    | |__| | | | \ \  | |\  |   | |____  | |____   _| |_  | |____  | . \  | |____  | | \ \ 
+//  |_____/  /_/    \_\    |_|     \____/  |_|  \_\ |_| \_|    \_____| |______| |_____|  \_____| |_|\_\ |______| |_|  \_\
+//        
+
+        function clickCounter33() {
+            if (typeof(Storage) !== "undefined") {
+                if (localStorage.clickcount33) {
+                    if (localStorage.clickcount32 >= 5 * Number(localStorage.multiple) ) {
+                        localStorage.clickcount33 = Number(localStorage.clickcount33) + Number(localStorage.multiple);
+                        localStorage.clickcount32 = Number(localStorage.clickcount32) - 5 * Number(localStorage.multiple) ;
+                    }
+                
+                } else {
+                localStorage.clickcount33 = 0;
+                }
+                load()
+            } else {
+                document.getElementById("result5").innerHTML = "Sorry, your browser does not support web storage...";
+            }
+        }
+
+//    _____   _    _   _   _      _____   _        _____    _____   _  __  ______   _____  
+//   / ____| | |  | | | \ | |    / ____| | |      |_   _|  / ____| | |/ / |  ____| |  __ \ 
+//  | (___   | |  | | |  \| |   | |      | |        | |   | |      | ' /  | |__    | |__) |
+//   \___ \  | |  | | | . ` |   | |      | |        | |   | |      |  <   |  __|   |  _  / 
+//   ____) | | |__| | | |\  |   | |____  | |____   _| |_  | |____  | . \  | |____  | | \ \ 
+//  |_____/   \____/  |_| \_|    \_____| |______| |_____|  \_____| |_|\_\ |______| |_|  \_\
+// 
+
+        function clickCounter34() {
+            if (typeof(Storage) !== "undefined") {
+                if (localStorage.clickcount34) {
+                    if (localStorage.clickcount33 >= 5 * Number(localStorage.multiple) ) {
+                        localStorage.clickcount34 = Number(localStorage.clickcount34) + Number(localStorage.multiple);
+                        localStorage.clickcount33 = Number(localStorage.clickcount33) - 5 * Number(localStorage.multiple) ;
+                    }
+                
+                } else {
+                localStorage.clickcount34 = 0;
+                }
+                load()
+            } else {
+                document.getElementById("result5").innerHTML = "Sorry, your browser does not support web storage...";
+            }
+        }
+
+//  __      __  _____    _____   _______    ____    _____   __     __     _____   _        _____    _____   _  __  ______   _____  
+//  \ \    / / |_   _|  / ____| |__   __|  / __ \  |  __ \  \ \   / /    / ____| | |      |_   _|  / ____| | |/ / |  ____| |  __ \ 
+//   \ \  / /    | |   | |         | |    | |  | | | |__) |  \ \_/ /    | |      | |        | |   | |      | ' /  | |__    | |__) |
+//    \ \/ /     | |   | |         | |    | |  | | |  _  /    \   /     | |      | |        | |   | |      |  <   |  __|   |  _  / 
+//     \  /     _| |_  | |____     | |    | |__| | | | \ \     | |      | |____  | |____   _| |_  | |____  | . \  | |____  | | \ \ 
+//      \/     |_____|  \_____|    |_|     \____/  |_|  \_\    |_|       \_____| |______| |_____|  \_____| |_|\_\ |______| |_|  \_\
+//
+                                                                                                                                
+
+        function clickCounter35() {
+            if (typeof(Storage) !== "undefined") {
+                if (localStorage.clickcount35) {
+                    if (localStorage.clickcount34 >= 5 * Number(localStorage.multiple) ) {
+                        localStorage.clickcount35 = Number(localStorage.clickcount35) + Number(localStorage.multiple);
+                        localStorage.clickcount34 = Number(localStorage.clickcount34) - 5 * Number(localStorage.multiple) ;
+                    }
+                
+                } else {
+                localStorage.clickcount35 = 0;
+                }
+                load()
+            } else {
+                document.getElementById("result5").innerHTML = "Sorry, your browser does not support web storage...";
+            }
+        }
+
+//   _         ____               _____  
+//  | |       / __ \      /\     |  __ \ 
+//  | |      | |  | |    /  \    | |  | |
+//  | |      | |  | |   / /\ \   | |  | |
+//  | |____  | |__| |  / ____ \  | |__| |
+//  |______|  \____/  /_/    \_\ |_____/ 
+// 
+
+        function load() {
+            //victory
+            if (localStorage.clickcount35) {
+                document.getElementById("result35").innerHTML = "You have " + localStorage.clickcount35 + " many Victory clicks.";
+            } else {
+                localStorage.clickcount35 = 0;
+            }
+            //sun
+            if (localStorage.clickcount34) {
+                document.getElementById("result34").innerHTML = "You have " + localStorage.clickcount34 + " many Sun clicks.";
+            } else {
+                localStorage.clickcount34 = 0;
+            }
+            //saturn
+            if (localStorage.clickcount33) {
+                document.getElementById("result33").innerHTML = "You have " + localStorage.clickcount33 + " many Saturn clicks.";
+            } else {
+                localStorage.clickcount33 = 0;
+            }
+            //juputer
+            if (localStorage.clickcount32) {
+                document.getElementById("result32").innerHTML = "You have " + localStorage.clickcount32 + " many Juputer clicks.";
+            } else {
+                localStorage.clickcount32 = 0;
+            }
+            //Neptune
+            if (localStorage.clickcount31) {
+                document.getElementById("result31").innerHTML = "You have " + localStorage.clickcount31 + " many Neptune clicks.";
+            } else {
+                localStorage.clickcount31 = 0;
+            }
+            // Pluto
+            if (localStorage.clickcount25) {
+                document.getElementById("result25").innerHTML = "You have " + localStorage.clickcount25 + " many Pluto clicks.";
+            } else {
+                localStorage.clickcount25 = 0;
+            }
+            //Mercury
+            if (localStorage.clickcount24) {
+                document.getElementById("result24").innerHTML = "You have " + localStorage.clickcount24 + " many Mercury clicks.";
+            } else {
+                localStorage.clickcount24 = 0;
+            }
+            //Venus
+            if (localStorage.clickcount23) {
+                document.getElementById("result23").innerHTML = "You have " + localStorage.clickcount23 + " many Venus clicks.";
+            } else {
+                localStorage.clickcount23 = 0;
+            }
+            //jMars
+            if (localStorage.clickcount22) {
+                document.getElementById("result22").innerHTML = "You have " + localStorage.clickcount22 + " many Mars clicks.";
+            } else {
+                localStorage.clickcount22 = 0;
+            }
+            //Earth
+            if (localStorage.clickcount21) {
+                document.getElementById("result21").innerHTML = "You have " + localStorage.clickcount21 + " many Earths clicks.";
+            } else {
+                localStorage.clickcount21 = 0;
+            }
+            //Human
+            if (localStorage.clickcount7) {
+                document.getElementById("result7").innerHTML = "You have " + localStorage.clickcount7 + " many human clicks.";
+            } else {
+                localStorage.clickcount7 = 0;
+            }
+            //Rabbit
+            if (localStorage.clickcount6) {
+                document.getElementById("result6").innerHTML = "You have " + localStorage.clickcount6 + " many Rabbit clicks.";
+            } else {
+                localStorage.clickcount6 = 0;
+            }
+            //Pengiun
+            if (localStorage.clickcount5) {
+                document.getElementById("result5").innerHTML = "You have " + localStorage.clickcount5 + " many Pengiuns clicks.";
+            } else {
+                localStorage.clickcount5 = 0;
+            }
+            //Fox
+            if (localStorage.clickcount4) {
+                document.getElementById("result4").innerHTML = "You have " + localStorage.clickcount4 + " many Foxes clicks.";
+            } else {
+                localStorage.clickcount4 = 0;
+            }
+            //Owl
+            if (localStorage.clickcount3) {
+                document.getElementById("result3").innerHTML = "You have " + localStorage.clickcount3 + " many Owls clicks.";
+            } else {
+                localStorage.clickcount3 = 0;
+            }
+            //Mice
+            if (localStorage.clickcount2) {
+                document.getElementById("result2").innerHTML = "You have " + localStorage.clickcount2 + " many Mice clicks.";
+            } else {
+                localStorage.clickcount2 = 0;
+            }
+            //Bird
+            if (localStorage.clickcount) {
+                document.getElementById("result").innerHTML = "You have " + localStorage.clickcount + " many Birds clicks.";
+            } else {
+                localStorage.clickcount = 0;
+            }
+            //Multiplier
+            if (localStorage.multiple) {
+                document.getElementById("result99").innerHTML = "You have " + localStorage.multiple + " Multiplier."; 
+            } else {
+                localStorage.multiple = 1
+            }
+            // total amount of clicks
+            if (localStorage.clicktotal) {
+                localStorage.clicktotal = Number(localStorage.clicktotal) + 1
+                document.getElementById("test").innerHTML = localStorage.clicktotal;
+            } else {
+                localStorage.clicktotal = 1
+            }
+        }
+
+
+//               _____   _    _   _____   ______  __      __  ______   __  __   ______   _   _   _______ 
+//      /\      / ____| | |  | | |_   _| |  ____| \ \    / / |  ____| |  \/  | |  ____| | \ | | |__   __|
+//     /  \    | |      | |__| |   | |   | |__     \ \  / /  | |__    | \  / | | |__    |  \| |    | |   
+//    / /\ \   | |      |  __  |   | |   |  __|     \ \/ /   |  __|   | |\/| | |  __|   | . ` |    | |   
+//   / ____ \  | |____  | |  | |  _| |_  | |____     \  /    | |____  | |  | | | |____  | |\  |    | |   
+//  /_/    \_\  \_____| |_|  |_| |_____| |______|     \/     |______| |_|  |_| |______| |_| \_|    |_|  
+// 
+
+        function achievement() {
+            ach1();
+            ach2();
+            ach3();
+            ach4();
+            ach5();
+            ach6();
+            ach7();
+            ach9();
+            ach10();
+            ach11();
+            ach13();
+        }
+
+// ach# = the achievement on the list
+
+        function ach1() {
+            if (localStorage.done1 = 1) {
+                if (localStorage.clickcount35 >= 1) {
+                    localStorage.done1 = 1;
+                    document.getElementById("done1").innerHTML = "&otimes; ";
+                } else {
+                    localStorage.done1 = 0;
+                }
+            } else {
+                localStorage.done1 = 0;
+                if (localStorage.done1 >= 1) {
+                    if (localStorage.clickcount35 >= 1) {
+                        localStorage.done1 = 1;
+                        document.getElementById("done1").innerHTML = "&otimes; ";
+                    } else {
+                        localStorage.done1 = 0;
+                    }
+                }
+            }
+        }
+
+        function ach2() {
+            if (localStorage.done2 = 1) {
+                if (localStorage.clicktotal >= 1000000000) {
+                    localStorage.done2 = 1;
+                    document.getElementById("done2").innerHTML = "&otimes; ";
+                } else {
+                    localStorage.done2 = 0;
+                }
+            } else {
+                localStorage.done2 = 0;
+                if (localStorage.done2 >= 1) {
+                    if (localStorage.clicktotal >= 1000000000) {
+                        localStorage.done2 = 1;
+                        document.getElementById("done2").innerHTML = "&otimes; ";
+                    } else {
+                        localStorage.done2 = 0;
+                    }
+                }
+            }
+        }
+
+        function ach3() {
+            if (localStorage.done3 = 1) {
+                if (localStorage.clickcount >= 1) {
+                    document.getElementById("done3").innerHTML = "&otimes;  ";
+                    localStorage.done3 = 1
+                }
+            } else {
+                localStorage.done3 = 0;
+                if (localStorage.done3 = 1) {
+                    document.getElementById("done3").innerHTML = "&otimes;  "; 
+                }
+            }
+        }
+
+        function ach4() {
+            if (localStorage.done4 = 1) {
+                if (localStorage.clickcount >= 200 && localStorage.clickcount2 >= 200 && localStorage.clickcount3 >= 200 && localStorage.clickcount4 >= 200 && localStorage.clickcount5 >= 200 && localStorage.clickcount6 >= 200 && localStorage.clickcount7 >= 200 && localStorage.clickcount21 >= 200 && localStorage.clickcount22 >= 200 && localStorage.clickcount23 >= 200 && localStorage.clickcount24 >= 200 && localStorage.clickcount25 >= 200 && localStorage.clickcount31 >= 200 && localStorage.clickcount32 >= 200 && localStorage.clickcount33 >= 200 && localStorage.clickcount35 >= 200) {
+                    localStorage.done4 = 1;
+                    document.getElementById("done4").innerHTML = "&otimes; ";
+                } else {
+                    localStorage.done4 = 0;
+                }
+            } else {
+                localStorage.done4 = 0;
+                if (localStorage.done4 >= 1) {
+                    if (localStorage.clickcount >= 200 && localStorage.clickcount2 >= 200 && localStorage.clickcount3 >= 200 && localStorage.clickcount4 >= 200 && localStorage.clickcount5 >= 200 && localStorage.clickcount6 >= 200 && localStorage.clickcount7 >= 200 && localStorage.clickcount21 >= 200 && localStorage.clickcount22 >= 200 && localStorage.clickcount23 >= 200 && localStorage.clickcount24 >= 200 && localStorage.clickcount25 >= 200 && localStorage.clickcount31 >= 200 && localStorage.clickcount32 >= 200 && localStorage.clickcount33 >= 200 && localStorage.clickcount35 >= 200) {
+                        localStorage.done4 = 1;
+                        document.getElementById("done4").innerHTML = "&otimes; ";
+                    } else {
+                        localStorage.done4 = 0;
+                    }
+                }
+            }
+        }
+
+        function ach5() {
+            if (localStorage.done5 = 1) {
+                if (localStorage.clickcount35 >= 5) {
+                    localStorage.done5 = 1;
+                    document.getElementById("done5").innerHTML = "&otimes; ";
+                } else {
+                    localStorage.done5 = 0;
+                }
+            } else {
+                localStorage.done5 = 0;
+                if (localStorage.done5 = 0) {
+                    if (localStorage.clickcount35 >= 5) {
+                        localStorage.done5 = 1;
+                        document.getElementById("done5").innerHTML = "&otimes; ";
+                    } else {
+                        localStorage.done5 = 0;
+                    }
+                }
+            }
+        }
+
+        function ach6() {
+            if (localStorage.done6 = 1) {
+                if (localStorage.clickcount35 >= 25) {
+                    localStorage.done6 = 1;
+                    document.getElementById("done6").innerHTML = "&otimes; ";
+                } else {
+                    localStorage.done6 = 0;
+                }
+            } else {
+                localStorage.done6 = 0;
+                if (localStorage.done6 = 0) {
+                    if (localStorage.clickcount35 >= 25) {
+                        localStorage.done6 = 1;
+                        document.getElementById("done6").innerHTML = "&otimes; ";
+                    } else {
+                        localStorage.done6 = 0;
+                    }
+                }
+            }
+        }
+
+        function ach7() {
+            if (localStorage.done7 = 1) {
+                if (localStorage.clickcount35 >= 50) {
+                    localStorage.done7 = 1;
+                    document.getElementById("done7").innerHTML = "&otimes; ";
+                } else {
+                    localStorage.done7 = 0;
+                }
+            } else {
+                localStorage.done7 = 0;
+                if (localStorage.done7 = 0) {
+                    if (localStorage.clickcount35 >= 50) {
+                        localStorage.done7 = 1;
+                        document.getElementById("done7").innerHTML = "&otimes; ";
+                    } else {
+                        localStorage.done7 = 0;
+                    }
+                }
+            }
+        }
+
+        // achievement 8 + 12 was removed so on the list it goes
+        // ach9 = #8
+        // ach10 = #9
+        // ach11 = #10
+        // ach13 = #11
+        // ach14 = #12
+
+        function ach9() {
+            if (localStorage.done9 = 1) {
+                if (localStorage.clickcount >= 8212002) {
+                    document.getElementById("done9").innerHTML = "&otimes; ";
+                    localStorage.done9 = 1;
+                }
+            } else {
+                localStorage.done9 = 0;
+                if (localStorage.clickcount >= 8212002) {
+                    document.getElementById("done9").innerHTML = "&otimes; "; 
+                    localStorage.done9 = 1;
+                } else {
+                    localStorage.done9 = 0
+                }
+            }
+        }
+
+        function ach10() {
+            if (localStorage.done10 =  1) {
+                if (localStorage.clickcount >= 5232019) {
+                    document.getElementById("done10").innerHTML = "&otimes; ";
+                    localStorage.done10 = 1;
+                }
+            } else {
+                localStorage.done10 = 0;
+                if (localStorage.clickcount >= 5232019) {
+                    document.getElementById("done10").innerHTML = "&otimes; "; 
+                    localStorage.done10 = 1;
+                } else {
+                    localStorage.done10 = 0
+                }
+            }
+        }
+
+        function ach11() {
+            if (localStorage.done11 = 1) {
+                if (localStorage.clickcount >= 24737) {
+                    document.getElementById("done11").innerHTML = "&otimes; ";
+                    localStorage.done11 = 1;
+                }
+            } else {
+                localStorage.done11 = 0;
+                if (localStorage.clickcount >= 24737) {
+                    document.getElementById("done11").innerHTML = "&otimes; "; 
+                    localStorage.done11 = 1;
+                } else {
+                    localStorage.done11 = 0
+                }
+            }
+        }
+
+        function ach13() {
+            if (localStorage.done13 = 1) {
+                if (localStorage.clicktotal >= 65782586645257) {
+                    localStorage.done13 = 1;
+                    document.getElementById("done13").innerHTML = "&otimes; ";
+                } else {
+                    localStorage.done13 = 0;
+                }
+            } else {
+                localStorage.done13 = 0;
+                if (localStorage.done13 >= 1) {
+                    if (localStorage.clicktotal >= 65782586645257) {
+                        localStorage.done13 = 1;
+                        document.getElementById("done13").innerHTML = "&otimes; ";
+                    } else {
+                        localStorage.done13 = 0;
+                    }
+                }
+            }
+        }
+
+        function ach14() {
+            if (localStorage.done14 = 1) {
+                if (localStorage.clickcount7 = 911) {
+                    localStorage.done14 = 1;
+                    document.getElementById("done14").innerHTML = "&otimes; ";
+                } else {
+                    localStorage.done14 = 0;
+                }
+            } else {
+                localStorage.done13 = 0;
+                    if (localStorage.clickcount7 = 7700000000) {
+                        localStorage.done14 = 1;
+                        document.getElementById("done14").innerHTML = "&otimes; ";
+                    } else {
+                        localStorage.done14 = 0;
+                    }
+                }
+            }
+        
+        function restart() {
+            var txt;
+            var r = confirm("This will clear ALL your DATA");
+            if (r == true) {
+                var z = confirm("Are you sure you want to reset ALL your DATA");
+                if (z == true) {
+                    var x = confirm("YOU WILL KILL HOURS OF WORK");
+                    if (x == true) {
+                        var ds = confirm("YOU MONSTER");
+                        localStorage.clear();
+                        location.reload();
+                    } else {
+                        txt = "You pressed Cancel!";
+                    }
+                } else {
+                    txt = "You pressed Cancel!";
+                }
+            } else {
+                txt = "You pressed Cancel!";
+            }
+        }
+
+        function darkon() {
+            document.getElementById("a").classList.add('clickDark');
+            document.getElementById("b").classList.add('clickDark');
+            document.getElementById("c").classList.add('clickDark');
+            document.getElementById("d").classList.add('clickDark');
+            document.getElementById("e").classList.add('clickDark');
+            document.getElementById("f").classList.add('clickDark');
+            document.getElementById("g").classList.add('clickDark');
+            document.getElementById("h").classList.add('clickDark');
+            document.getElementById("i").classList.add('clickDark');
+            document.getElementById("j").classList.add('clickDark');
+            document.getElementById("k").classList.add('clickDark');
+            document.getElementById("l").classList.add('clickDark');
+            document.getElementById("m").classList.add('clickDark');
+            document.getElementById("n").classList.add('clickDark');
+            document.getElementById("o").classList.add('clickDark');
+            document.getElementById("q").classList.add('clickDark');
+            document.getElementById("p").classList.add('clickDark');
+            document.getElementById("r").classList.add('clickDark');
+            document.getElementById("s").classList.add('clickDark');
+            document.getElementById("t").classList.add('clickDark');
+            document.getElementById("u").classList.add('clickDark');
+            document.getElementById("v").classList.add('clickDark');
+            document.getElementById("aa").classList.add('bodyDark');
+            document.getElementById("result").classList.add('resultDark');
+            document.getElementById("result2").classList.add('resultDark');
+            document.getElementById("result3").classList.add('resultDark');
+            document.getElementById("result4").classList.add('resultDark');
+            document.getElementById("result5").classList.add('resultDark');
+            document.getElementById("result6").classList.add('resultDark');
+            document.getElementById("result7").classList.add('resultDark');
+            document.getElementById("result21").classList.add('resultDark');
+            document.getElementById("result22").classList.add('resultDark');
+            document.getElementById("result23").classList.add('resultDark');
+            document.getElementById("result24").classList.add('resultDark');
+            document.getElementById("result25").classList.add('resultDark');
+            document.getElementById("result31").classList.add('resultDark');
+            document.getElementById("result32").classList.add('resultDark');
+            document.getElementById("result33").classList.add('resultDark');
+            document.getElementById("result34").classList.add('resultDark');
+            document.getElementById("result35").classList.add('resultDark');
+            document.getElementById("result99").classList.add('resultDark');
+            document.getElementById("darktheme").classList.add('resultDark');
+            document.getElementById("aaa").classList.add('stageDark');
+            document.getElementById("aab").classList.add('stageDark');
+            document.getElementById("aac").classList.add('stageDark');
+            document.getElementById("aad").classList.add('stageDark');
+            document.getElementById("aae").classList.add('stageDark');
+            document.getElementById("aaf").classList.add('stageDark');
+            document.getElementById("aba").classList.add('priceDark');
+            document.getElementById("abb").classList.add('achDark');
+            document.getElementById("baa").classList.add('achItemDark')
+            document.getElementById("bab").classList.add('achItemDark')
+            document.getElementById("bac").classList.add('achItemDark')
+            document.getElementById("bad").classList.add('achItemDark')
+            document.getElementById("bae").classList.add('achItemDark')
+            document.getElementById("baf").classList.add('achItemDark')
+            document.getElementById("bag").classList.add('achItemDark')
+            document.getElementById("bah").classList.add('achItemDark')
+            document.getElementById("bai").classList.add('achItemDark')
+            document.getElementById("baj").classList.add('achItemDark')
+            document.getElementById("bak").classList.add('achItemDark')
+            document.getElementById("bal").classList.add('achItemDark')
+        }
+
+        function darkoff() {
+            document.getElementById("a").classList.remove('clickDark');
+            document.getElementById("b").classList.remove('clickDark');
+            document.getElementById("c").classList.remove('clickDark');
+            document.getElementById("d").classList.remove('clickDark');
+            document.getElementById("e").classList.remove('clickDark');
+            document.getElementById("f").classList.remove('clickDark');
+            document.getElementById("g").classList.remove('clickDark');
+            document.getElementById("h").classList.remove('clickDark');
+            document.getElementById("i").classList.remove('clickDark');
+            document.getElementById("j").classList.remove('clickDark');
+            document.getElementById("k").classList.remove('clickDark');
+            document.getElementById("l").classList.remove('clickDark');
+            document.getElementById("m").classList.remove('clickDark');
+            document.getElementById("n").classList.remove('clickDark');
+            document.getElementById("o").classList.remove('clickDark');
+            document.getElementById("p").classList.remove('clickDark');
+            document.getElementById("q").classList.remove('clickDark');
+            document.getElementById("r").classList.remove('clickDark');
+            document.getElementById("s").classList.remove('clickDark');
+            document.getElementById("t").classList.remove('clickDark');
+            document.getElementById("u").classList.remove('clickDark');
+            document.getElementById("v").classList.remove('clickDark');
+            document.getElementById("aa").classList.remove('bodyDark');
+            document.getElementById("result").classList.remove('resultDark');
+            document.getElementById("result2").classList.remove('resultDark');
+            document.getElementById("result3").classList.remove('resultDark');
+            document.getElementById("result4").classList.remove('resultDark');
+            document.getElementById("result5").classList.remove('resultDark');
+            document.getElementById("result6").classList.remove('resultDark');
+            document.getElementById("result7").classList.remove('resultDark');
+            document.getElementById("result21").classList.remove('resultDark');
+            document.getElementById("result22").classList.remove('resultDark');
+            document.getElementById("result23").classList.remove('resultDark');
+            document.getElementById("result24").classList.remove('resultDark');
+            document.getElementById("result25").classList.remove('resultDark');
+            document.getElementById("result31").classList.remove('resultDark');
+            document.getElementById("result32").classList.remove('resultDark');
+            document.getElementById("result33").classList.remove('resultDark');
+            document.getElementById("result34").classList.remove('resultDark');
+            document.getElementById("result35").classList.remove('resultDark');
+            document.getElementById("result99").classList.remove('resultDark');
+            document.getElementById("darktheme").classList.remove('resultDark');
+            document.getElementById("aaa").classList.remove('stageDark');
+            document.getElementById("aab").classList.remove('stageDark');
+            document.getElementById("aac").classList.remove('stageDark');
+            document.getElementById("aad").classList.remove('stageDark');
+            document.getElementById("aae").classList.remove('stageDark');
+            document.getElementById("aaf").classList.remove('stageDark');
+            document.getElementById("aba").classList.remove('priceDark');
+            document.getElementById("abb").classList.remove('achDark');
+            document.getElementById("baa").classList.remove('achItemDark')
+            document.getElementById("bab").classList.remove('achItemDark')
+            document.getElementById("bac").classList.remove('achItemDark')
+            document.getElementById("bad").classList.remove('achItemDark')
+            document.getElementById("bae").classList.remove('achItemDark')
+            document.getElementById("baf").classList.remove('achItemDark')
+            document.getElementById("bag").classList.remove('achItemDark')
+            document.getElementById("bah").classList.remove('achItemDark')
+            document.getElementById("bai").classList.remove('achItemDark')
+            document.getElementById("baj").classList.remove('achItemDark')
+            document.getElementById("bak").classList.remove('achItemDark')
+            document.getElementById("bal").classList.remove('achItemDark')
+        }
+
+        function nukeon() {
+            document.getElementById("a").classList.add('clickNuke');
+            document.getElementById("b").classList.add('clickNuke');
+            document.getElementById("c").classList.add('clickNuke');
+            document.getElementById("d").classList.add('clickNuke');
+            document.getElementById("e").classList.add('clickNuke');
+            document.getElementById("f").classList.add('clickNuke');
+            document.getElementById("g").classList.add('clickNuke');
+            document.getElementById("h").classList.add('clickNuke');
+            document.getElementById("i").classList.add('clickNuke');
+            document.getElementById("j").classList.add('clickNuke');
+            document.getElementById("k").classList.add('clickNuke');
+            document.getElementById("l").classList.add('clickNuke');
+            document.getElementById("m").classList.add('clickNuke');
+            document.getElementById("n").classList.add('clickNuke');
+            document.getElementById("o").classList.add('clickNuke');
+            document.getElementById("q").classList.add('clickNuke');
+            document.getElementById("p").classList.add('clickNuke');
+            document.getElementById("r").classList.add('clickNuke');
+            document.getElementById("s").classList.add('clickNuke');
+            document.getElementById("t").classList.add('clickNuke');
+            document.getElementById("u").classList.add('clickNuke');
+            document.getElementById("v").classList.add('clickNuke');
+            document.getElementById("aa").classList.add('bodyNuke');
+            document.getElementById("result").classList.add('resultNuke');
+            document.getElementById("result2").classList.add('resultNuke');
+            document.getElementById("result3").classList.add('resultNuke');
+            document.getElementById("result4").classList.add('resultNuke');
+            document.getElementById("result5").classList.add('resultNuke');
+            document.getElementById("result6").classList.add('resultNuke');
+            document.getElementById("result7").classList.add('resultNuke');
+            document.getElementById("result21").classList.add('resultNuke');
+            document.getElementById("result22").classList.add('resultNuke');
+            document.getElementById("result23").classList.add('resultNuke');
+            document.getElementById("result24").classList.add('resultNuke');
+            document.getElementById("result25").classList.add('resultNuke');
+            document.getElementById("result31").classList.add('resultNuke');
+            document.getElementById("result32").classList.add('resultNuke');
+            document.getElementById("result33").classList.add('resultNuke');
+            document.getElementById("result34").classList.add('resultNuke');
+            document.getElementById("result35").classList.add('resultNuke');
+            document.getElementById("result99").classList.add('resultNuke');
+            document.getElementById("darktheme").classList.add('resultNuke');
+            document.getElementById("aaa").classList.add('stageNuke');
+            document.getElementById("aab").classList.add('stageNuke');
+            document.getElementById("aac").classList.add('stageNuke');
+            document.getElementById("aad").classList.add('stageNuke');
+            document.getElementById("aae").classList.add('stageNuke');
+            document.getElementById("aaf").classList.add('stageNuke');
+            document.getElementById("aba").classList.add('priceNuke');
+            document.getElementById("abb").classList.add('achNuke');
+            document.getElementById("baa").classList.add('achItemNuke')
+            document.getElementById("bab").classList.add('achItemNuke')
+            document.getElementById("bac").classList.add('achItemNuke')
+            document.getElementById("bad").classList.add('achItemNuke')
+            document.getElementById("bae").classList.add('achItemNuke')
+            document.getElementById("baf").classList.add('achItemNuke')
+            document.getElementById("bag").classList.add('achItemNuke')
+            document.getElementById("bah").classList.add('achItemNuke')
+            document.getElementById("bai").classList.add('achItemNuke')
+            document.getElementById("baj").classList.add('achItemNuke')
+            document.getElementById("bak").classList.add('achItemNuke')
+            document.getElementById("bal").classList.add('achItemNuke')
+        }
+
+        function nukeoff() {
+            document.getElementById("a").classList.remove('clickNuke');
+            document.getElementById("b").classList.remove('clickNuke');
+            document.getElementById("c").classList.remove('clickNuke');
+            document.getElementById("d").classList.remove('clickNuke');
+            document.getElementById("e").classList.remove('clickNuke');
+            document.getElementById("f").classList.remove('clickNuke');
+            document.getElementById("g").classList.remove('clickNuke');
+            document.getElementById("h").classList.remove('clickNuke');
+            document.getElementById("i").classList.remove('clickNuke');
+            document.getElementById("j").classList.remove('clickNuke');
+            document.getElementById("k").classList.remove('clickNuke');
+            document.getElementById("l").classList.remove('clickNuke');
+            document.getElementById("m").classList.remove('clickNuke');
+            document.getElementById("n").classList.remove('clickNuke');
+            document.getElementById("o").classList.remove('clickNuke');
+            document.getElementById("p").classList.remove('clickNuke');
+            document.getElementById("q").classList.remove('clickNuke');
+            document.getElementById("r").classList.remove('clickNuke');
+            document.getElementById("s").classList.remove('clickNuke');
+            document.getElementById("t").classList.remove('clickNuke');
+            document.getElementById("u").classList.remove('clickNuke');
+            document.getElementById("v").classList.remove('clickNuke');
+            document.getElementById("aa").classList.remove('bodyNuke');
+            document.getElementById("result").classList.remove('resultNuke');
+            document.getElementById("result2").classList.remove('resultNuke');
+            document.getElementById("result3").classList.remove('resultNuke');
+            document.getElementById("result4").classList.remove('resultNuke');
+            document.getElementById("result5").classList.remove('resultNuke');
+            document.getElementById("result6").classList.remove('resultNuke');
+            document.getElementById("result7").classList.remove('resultNuke');
+            document.getElementById("result21").classList.remove('resultNuke');
+            document.getElementById("result22").classList.remove('resultNuke');
+            document.getElementById("result23").classList.remove('resultNuke');
+            document.getElementById("result24").classList.remove('resultNuke');
+            document.getElementById("result25").classList.remove('resultNuke');
+            document.getElementById("result31").classList.remove('resultNuke');
+            document.getElementById("result32").classList.remove('resultNuke');
+            document.getElementById("result33").classList.remove('resultNuke');
+            document.getElementById("result34").classList.remove('resultNuke');
+            document.getElementById("result35").classList.remove('resultNuke');
+            document.getElementById("result99").classList.remove('resultNuke');
+            document.getElementById("darktheme").classList.remove('resultNuke');
+            document.getElementById("aaa").classList.remove('stageNuke');
+            document.getElementById("aab").classList.remove('stageNuke');
+            document.getElementById("aac").classList.remove('stageNuke');
+            document.getElementById("aad").classList.remove('stageNuke');
+            document.getElementById("aae").classList.remove('stageNuke');
+            document.getElementById("aaf").classList.remove('stageNuke');
+            document.getElementById("aba").classList.remove('priceNuke');
+            document.getElementById("abb").classList.remove('achNuke');
+            document.getElementById("baa").classList.remove('achItemNuke')
+            document.getElementById("bab").classList.remove('achItemNuke')
+            document.getElementById("bac").classList.remove('achItemNuke')
+            document.getElementById("bad").classList.remove('achItemNuke')
+            document.getElementById("bae").classList.remove('achItemNuke')
+            document.getElementById("baf").classList.remove('achItemNuke')
+            document.getElementById("bag").classList.remove('achItemNuke')
+            document.getElementById("bah").classList.remove('achItemNuke')
+            document.getElementById("bai").classList.remove('achItemNuke')
+            document.getElementById("baj").classList.remove('achItemNuke')
+            document.getElementById("bak").classList.remove('achItemNuke')
+            document.getElementById("bal").classList.remove('achItemNuke')
+        }
+        </script>
+
+        <style>
+
+            .click {
+            width: 5.5em;
+            height: 5.5em;
+            color: violet;
+            font-size: 1.5em;
+            background: lightblue;
+            }
+
+            .Stages {
+                display: flex;
+                justify-content: space-around;
+                
+            }
+
+            .price {
+                color: lightpink;
+                border: 2px red outset;
+                padding: 1em;
+                background-color: royalblue;
+                width: 100%;
+            }
+
+            .itemp {
+                font-size: 1.5em;
+                list-style-type: none;
+            }
+
+            .body {
+                background: #cccccc;
+            }
+
+            /* .hidden {
+                margin: auto 0;
+                background: none;
+	            color: inherit;
+	            border: none;
+	            padding: 0;
+	            font: inherit;
+	            cursor: pointer;
+	            outline: inherit;
+            } */
+
+            .achievement {
+                margin: 1em;
+                color: lightpink;
+                font-size: 1.5em;
+                list-style-type: none;
+            }
+
+            .achievementContaner {
+                background-color: royalblue;
+                border: 2px red inset;
+                padding: 1em;
+                width: 100%;
+            }
+
+            .done {
+                display: inline;
+                color: lightblue;
+            }
+
+            .resultText {
+                color: #595959;
+            }
+
+            .stageText {
+                color: #2e2e2e;
+            }
+
+            .clickDark {
+                color: blueviolet;
+                background: #001d53;
+            }
+
+            .bodyDark {
+                background: #292929;
+            }
+
+            .resultDark {
+                color: #cccccc;
+            }
+
+            .stageDark {
+                color: #bfbfbf;
+            }
+
+            .priceDark {
+                color: #ff0026;
+                border: 2px #ffffff outset;
+                padding: 1em;
+                background-color: #133086;
+                width: 100%;
+            }
+
+            .achDark {
+                background-color: #133086;
+                border: 2px #ffffff inset;
+                padding: 1em;
+                width: 100%;
+            }
+
+            .achItemDark {
+                color: #ff0026;
+                list-style-type: none;
+            }
+
+            .clickNuke {
+                color: #00fbff;
+                background: #ff00ff;
+            }
+
+            .bodyNuke {
+                background: #00ff2a;
+            }
+
+            .resultNuke {
+                color: black;
+            }
+
+            .stageNuke {
+                color: #222222;
+            }
+
+            .priceNuke {
+                color: #00fbff;
+                border: 2px #ff0026 outset;
+                padding: 1em;
+                background-color: #ff00ff;
+                width: 100%;
+            }
+
+            .achNuke {
+                background-color: #ff00ff;
+                border: 2px #ff0026 inset;
+                padding: 1em;
+                width: 100%;
+            }
+
+            .achItemNuke {
+                color: #0ffbff;
+                list-style-type: none;
+            }
+
+            .hidden1 {
+                visibility: hidden;
+            }
+
+    </style>
+</head>
+
+<body id="aa" class="body" onload="check()">
+
+    <div class="Stages">
+
+        <div class="stage1">
+
+            <h2 class="stageText hidden1" id="aaa">Animals</h2>
+            <p><button id="a" class="click hidden1" onclick="clickCounter()" type="button"> &nbsp; &nbsp; &nbsp; &lpar; &nbsp; &middot; &rpar; &gt; <br> &lt; &prime; &lowbar; &sol; </button></p>
+            <div id="result" class="resultText hidden1"></div>
+
+            <p><button id="b" class="click hidden1" onclick="clickCounter2()" type="button"> &lpar; &rpar; - &lpar; &rpar; <br> &bsol; &quot; &sol; <br> &apos;</button></p>
+            <div id="result2" class="resultText hidden1"></div>
+
+            <p><button id="c" class="click hidden1" onclick="clickCounter3()" type="button"> &sol; &bsol; &lowbar; &sol; &bsol; <br> &lpar; &lpar; 0 V 0 &rpar; &rpar; <br> &lpar; &rpar; &excl; &excl; &excl; &lpar; &rpar; <br> VVV</button></p>
+            <div id="result3" class="resultText hidden1"></div>
+
+            <p><button id="d" class="click hidden1" onclick="clickCounter4()" type="button"> &sol; &bsol; &comma; &sol; &bsol; <br> &lt; &ast; &nbsp; &ast; &gt; <br> &OverBar; &bsol; &lowbar; &sol; &OverBar; </button></p>
+            <div id="result4" class="resultText hidden1"></div>
+
+            <p><button id="e" class="click hidden1" onclick="clickCounter5()" type="button">  &lowbar; &lowbar; <br> &lpar; &nbsp; o &gt; <br> &sol; &sol; &sol; &bsol; <br> &nbsp; V &lowbar; &sol; &lowbar;</button></p>
+            <div id="result5" class="resultText hidden1"></div>
+
+            <p><button id="f" class="click hidden1" onclick="clickCounter6()" type="button">  &nbsp;// <br> ( '> <br> /rr <br> *\ ))_</button></p>
+            <div id="result6" class="resultText hidden1"></div>
+
+            <p><button id="g" class="click hidden1" onclick="clickCounter7()" type="button"> ¯\_(ツ)_/¯ </button></p>
+            <div id="result7" class="resultText hidden1"></div>
+
+        </div>
+
+        <div class="stage2">
+            <h2 class="stageText hidden1" id="aab">Rocky Planets</h2>
+
+            <p><button id="h" class="click hidden1" onclick="clickCounter21()" type="button"> ♁ <br> Earth </button></p>
+            <div id="result21" class="resultText hidden1"></div>
+
+            <p><button id="i" class="click hidden1" onclick="clickCounter22()" type="button"> ♂ <br> Mars</button></p>
+            <div id="result22" class="resultText hidden1"></div>
+
+            <p><button id="j" class="click hidden1" onclick="clickCounter23()" type="button"> ♀ <br> Venus</button></p>
+            <div id="result23" class="resultText hidden1"></div>
+
+            <p><button id="k" class="click hidden1" onclick="clickCounter24()" type="button"> ☿	<br> Mercury</button></p>
+            <div id="result24" class="resultText hidden1"></div>
+
+            <p><button id="l" class="click hidden1" onclick="clickCounter25()" type="button"> ♇ <br> Pluto</button></p>
+            <div id="result25" class="resultText hidden1"></div>
+        </div>
+
+        <div class="stage3">
+            <h2 class="stageText  hidden1" id="aac">Gas Planets</h2>
+            <p><button id="m" class="click hidden1" onclick="clickCounter31()" type="button"> ♆ <br> Neptune </button></p>
+            <div id="result31" class="resultText hidden1"></div>
+
+            <p><button id="n" class="click hidden1" onclick="clickCounter32()" type="button"> ♃ <br> Juputer </button></p>
+            <div id="result32" class="resultText hidden1"></div>
+
+            <p><button id="o" class="click hidden1" onclick="clickCounter33()" type="button"> ♄ <br> Saturn </button></p>
+            <div id="result33" class="resultText hidden1"></div>
+
+            <p><button id="p" class="click hidden1" onclick="clickCounter34()" type="button"> ☉	<br> Sun </button></p>
+            <div id="result34" class="resultText hidden1"></div>
+
+            <p><button id="q" class="click hidden1" onclick="clickCounter35()" type="button"> &veebar; <br> Victory </button></p>
+            <div id="result35" class="resultText hidden1"></div>
+        </div>
+
+        <div class="stage4">
+            <h2 class="stageText hidden1" id="aad">Misc</h2>
+
+            <p><button id="r" class="click hidden1" onclick="dark()" type="button">Color Theme</button></p>
+            <div id="darktheme" class="resultText hidden1"></div>
+
+            <p><button id="s" class="click hidden1" onclick="load()" type="button">Load</button></p>
+
+            <p><button id="t" class="click hidden1" onclick="multiple()" type="button">x?</button></p>
+            <div id="result99" class="resultText hidden1"></div>
+
+            <p><button id="u" class="click hidden1" onclick="achievement()" type="button">Check Achiev-<br>ements</button></p>
+
+            <p><button id="v" class="click hidden1" onclick="restart()" type="button">Restart</button></p>
+            
+        </div>
+
+        <div class="prices">
+            <h2 class="stageText hidden1" id="aae">Prices for each item</h2>
+            <ol class="price hidden1" id="aba">
+                <li class="itemp">5 Birds per mouse</li>
+                <li class="itemp">5 Mice per Owl</li>
+                <li class="itemp">5 Mice per Fox</li>
+                <li class="itemp">5 Owls per Penguin</li>
+                <li class="itemp">5 Foxes per Rabbit</li>
+                <li class="itemp">5 Penguins and 5 Rabbits per Human</li>
+                <li class="itemp">5 Humans per Earth</li>
+                <li class="itemp">5 Earths per Mars</li>
+                <li class="itemp">5 Mars per Venus</li>
+                <li class="itemp">5 Venus per Mercury</li>
+                <li class="itemp">5 Mercury per Pluto</li>
+                <li class="itemp">5 Pluto per Neptune</li>
+                <li class="itemp">5 Neptune per Juputer</li>
+                <li class="itemp">5 Juputer per Saturn</li>
+                <li class="itemp">5 Saturn per Sun</li>
+                <li class="itemp">5 Suns per Victory</li>
+            </ol>
+
+            <h2 class="stageText hidden1" id="aaf">Achievements</h2>
+            <ol class="achievementContaner hidden1" id="abb">
+                <li id="baa" class="achievement"><div class="done" id="done1">O</div> Get A Victory</li>
+                <li id="bab" class="achievement"><div class="done" id="done2">O</div> Click 1 billon buttons</li>
+                <li id="bac" class="achievement"><div class="done" id="done3">O</div> Click the Bird</li>
+                <li id="bad" class="achievement"><div class="done" id="done4">O</div> Have 200+ of each item</li>
+                <li id="bae" class="achievement"><div class="done" id="done5">O</div> Get 5 Victorys</li>
+                <li id="baf" class="achievement"><div class="done" id="done6">O</div> Get 25 Victorys</li>
+                <li id="bag" class="achievement"><div class="done" id="done7">O</div> Get 50 Victorys</li>
+                <!-- <li class="achievement">Click the Hidden button</li>
+                <div id="done8"></div> -->
+                <li  id="bah"class="achievement"><div class="done" id="done9">O</div> Have 8212002 Birds</li>
+                <li  id="bai"class="achievement"><div class="done" id="done10">O</div> Have 5232019 Birds</li>
+                <li  id="baj"class="achievement"><div class="done" id="done11">O</div> Have 24737 Birds</li>
+                <!-- <li class="achievement"><p><button class="hidden"  onclick="ach12()" type="button">Yell at Slattery</button></p></li>
+                <div id="done12"></div> -->
+                <li  id="bak"class="achievement"><div class="done" id="done13">O</div> Click 65,782,586,645,257 times</li>
+                <!--            Thanks Devante ^ -->
+                <li  id="bal"class="achievement"><div class="done" id="done14">O</div> Have 7.7 billion Humans</li>
+                <!-- Thanks Pheonix for this one ^ -->
+                <div id="test"></div>
+            </ol>
+        </div>
+
+
+    </div>
+
+</body>
